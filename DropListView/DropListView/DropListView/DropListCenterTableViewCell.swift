@@ -51,7 +51,7 @@ class DropListCenterTableViewCell: UITableViewCell {
             self.contentImageView.sizeToFit()
             self.contentLabel.sizeToFit()
             
-            self.contentImageView.center = CGPoint(x: self.contentImageView.frame.size.width/2 + 10, y: self.contentView.frame.size.height/2)
+            self.contentImageView.center = CGPoint(x: self.contentImageView.frame.size.width/2 + 8, y: self.contentView.frame.size.height/2)
             
             let imageViewLeft = contentImageView.frame.origin.x + contentImageView.frame.size.width
             self.contentLabel.center = CGPoint(x: self.contentLabel.frame.size.width/2 + 8 + imageViewLeft, y: self.contentView.frame.size.height/2)
