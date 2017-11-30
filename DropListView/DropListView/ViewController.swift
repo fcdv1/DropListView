@@ -40,6 +40,7 @@ class ViewController: UIViewController {
             configures.append(configure)
         }
         
+        //show listView and wait for callBack
         DropListView.showDropListViewWithRelateView(countryButton, showingItems: configures, cellAlignment: .left, cellSeletCallBack: { (index) in
             self.countryButton.setTitle(configures[index].title, for: .normal)
         }, userDismissDropViewCallBack: {

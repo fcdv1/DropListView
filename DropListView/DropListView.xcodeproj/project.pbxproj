@@ -15,6 +15,8 @@
 		0332EA071FCFB07B0023CE44 /* DropCellConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332EA061FCFB07B0023CE44 /* DropCellConfigure.swift */; };
 		0332EA091FCFB1130023CE44 /* DropListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332EA081FCFB1130023CE44 /* DropListView.swift */; };
 		0332EA0F1FCFF1E40023CE44 /* DropListCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332EA0E1FCFF1E40023CE44 /* DropListCenterTableViewCell.swift */; };
+		0332EA1F1FD00F990023CE44 /* howToUse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0332EA1E1FD00F990023CE44 /* howToUse.png */; };
+		0332EA211FD010890023CE44 /* useDemo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0332EA201FD010890023CE44 /* useDemo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0332EA061FCFB07B0023CE44 /* DropCellConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropCellConfigure.swift; sourceTree = "<group>"; };
 		0332EA081FCFB1130023CE44 /* DropListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListView.swift; sourceTree = "<group>"; };
 		0332EA0E1FCFF1E40023CE44 /* DropListCenterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropListCenterTableViewCell.swift; sourceTree = "<group>"; };
+		0332EA1E1FD00F990023CE44 /* howToUse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = howToUse.png; sourceTree = "<group>"; };
+		0332EA201FD010890023CE44 /* useDemo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = useDemo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				0332EA051FCFB0440023CE44 /* DropListView */,
 				0332E9F31FCFB01F0023CE44 /* AppDelegate.swift */,
 				0332E9F51FCFB01F0023CE44 /* ViewController.swift */,
+				0332EA1E1FD00F990023CE44 /* howToUse.png */,
+				0332EA201FD010890023CE44 /* useDemo.gif */,
 				0332E9F71FCFB0200023CE44 /* Main.storyboard */,
 				0332E9FA1FCFB0200023CE44 /* Assets.xcassets */,
 				0332E9FC1FCFB0200023CE44 /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0332E9FE1FCFB0200023CE44 /* LaunchScreen.storyboard in Resources */,
+				0332EA1F1FD00F990023CE44 /* howToUse.png in Resources */,
+				0332EA211FD010890023CE44 /* useDemo.gif in Resources */,
 				0332E9FB1FCFB0200023CE44 /* Assets.xcassets in Resources */,
 				0332E9F91FCFB0200023CE44 /* Main.storyboard in Resources */,
 			);
