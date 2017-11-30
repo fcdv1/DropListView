@@ -29,6 +29,7 @@ class DropListView: UIView ,UITableViewDelegate,UITableViewDataSource{
         dropView.cellConfigures = showingItems
         dropView.cellSelectCallBack = cellSeletCallBack
         dropView.userDismissDropViewCallBack = userDismissDropViewCallBack
+        dropView.cellAlignment = cellAlignment
         
         dropView.showDropView()
         
@@ -90,6 +91,10 @@ class DropListView: UIView ,UITableViewDelegate,UITableViewDataSource{
     }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         hideDropView()
+        
+        if let cancelBlock = userDismissDropViewCallBack{
+            cancelBlock()
+        }
     }
     func hideDropView() {
         UIView.animate(withDuration: 0.4, animations: {

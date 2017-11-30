@@ -18,18 +18,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var countryButton: UIButton!
     
     @IBAction func countryButtonPressed(_ sender: Any) {
+        // cell labels
         let countrys = ["China","USA","UK","India"]
+        
+        //cell backgroundColor
         let colors = [UIColor.brown,UIColor.blue,UIColor.purple,UIColor.lightGray]
+        
+        //cell left images
+        var cellImages:[UIImage] = []
+        for i in 0 ..< countrys.count{
+            cellImages.append(UIImage(named: "\(i)")!)
+        }
+        
+        //configure cell
         var configures:[DropCellConfigure] = []
         for i in 0 ..< countrys.count{
             let configure = DropCellConfigure()
             configure.title = countrys[i]
             configure.cellBackGroundColor = colors[i]
-            configure.iconImage = UIImage(named: "\(i)")
+            configure.iconImage = cellImages[i]
             configures.append(configure)
         }
+        
         DropListView.showDropListViewWithRelateView(countryButton, showingItems: configures, cellAlignment: .left, cellSeletCallBack: { (index) in
             self.countryButton.setTitle(configures[index].title, for: .normal)
+        }, userDismissDropViewCallBack: {
+            print("user cancel")
         })
     }
     
